@@ -1,0 +1,25 @@
+<routes>
+    <vType id="car" accel="0.8" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="7.0" guiShape="passenger"/>
+
+    <vType id="emergency" accel="2.5" decel="5.0" sigma="0.5" length="5" minGap="2.5" maxSpeed="10.0" 
+           guiShape="emergency" color="red" vClass="emergency"/>
+
+    <flow id="flow_NS" type="car" begin="0" end="3600" probability="0.1" from="N2C" to="C2S"/>
+    <flow id="flow_EW" type="car" begin="0" end="3600" probability="0.1" from="E2C" to="C2W"/>
+
+    <vehicle id="amb_N1" type="emergency" depart="30" departLane="0">
+        <route edges="N2C C2S"/>
+    </vehicle>
+
+    <vehicle id="amb_E1" type="emergency" depart="80" departLane="0">
+        <route edges="E2C C2W"/>
+    </vehicle>
+
+    <vehicle id="amb_N2" type="emergency" depart="150" departLane="1">
+        <route edges="N2C C2S"/>
+    </vehicle>
+
+    <vehicle id="amb_E2" type="emergency" depart="220" departLane="1">
+        <route edges="E2C C2W"/>
+    </vehicle>
+</routes>
