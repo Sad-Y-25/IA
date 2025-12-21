@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-21T19:18:10.252316+00:00 by Eclipse SUMO GUI 1.25.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="c:\Users\lenovo\Desktop\ENSA\S7\AI\Projet\IA\data\networks\RL.net.xml"/>
+        <route-files value="c:\Users\lenovo\Desktop\ENSA\S7\AI\Projet\IA\data\networks\RL.rou.xml"/>
+        <additional-files value="c:\Users\lenovo\Desktop\ENSA\S7\AI\Projet\IA\data\networks\RL.add.xml"/>
+    </input>
+
+    <time>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="49367"/>
+    </traci_server>
+
+    <gui_only>
+        <start value="true"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="100.00" id="Node1_2_EB_2" sampledSeconds="100.45" nVehEntered="9" nVehLeft="6" nVehSeen="9" meanSpeed="3.16" meanTimeLoss="8.62" meanOccupancy="4.73" maxOccupancy="17.36" meanMaxJamLengthInVehicles="0.43" meanMaxJamLengthInMeters="2.08" maxJamLengthInVehicles="3" maxJamLengthInMeters="24.36" jamLengthInVehiclesSum="87" jamLengthInMetersSum="415.42" meanHaltingDuration="5.35" maxHaltingDuration="8.50" haltingDurationSum="53.50" meanIntervalHaltingDuration="5.35" maxIntervalHaltingDuration="8.50" intervalHaltingDurationSum="53.50" startedHalts="10.00" meanVehicleNumber="1.02" maxVehicleNumber="3" />
+</detector>
