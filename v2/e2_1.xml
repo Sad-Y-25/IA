@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-31T23:50:46.049946+00:00 by Eclipse SUMO GUI 1.25.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\DELL\Desktop\Projects\Projet IA &amp; Traitement d&apos;image\IA\v2\RL.net.xml"/>
+        <route-files value="C:\Users\DELL\Desktop\Projects\Projet IA &amp; Traitement d&apos;image\IA\v2\RL.rou.xml"/>
+        <additional-files value="C:\Users\DELL\Desktop\Projects\Projet IA &amp; Traitement d&apos;image\IA\v2\RL.add.xml"/>
+    </input>
+
+    <time>
+        <end value="4600"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="1"/>
+    </processing>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="105.00" id="Node1_2_EB_1" sampledSeconds="7.58" nVehEntered="3" nVehLeft="2" nVehSeen="3" meanSpeed="12.94" meanTimeLoss="0.17" meanOccupancy="1.13" maxOccupancy="17.24" meanMaxJamLengthInVehicles="0.00" meanMaxJamLengthInMeters="0.00" maxJamLengthInVehicles="0" maxJamLengthInMeters="0.00" jamLengthInVehiclesSum="0" jamLengthInMetersSum="0.00" meanHaltingDuration="0.00" maxHaltingDuration="0.00" haltingDurationSum="0.00" meanIntervalHaltingDuration="0.00" maxIntervalHaltingDuration="0.00" intervalHaltingDurationSum="0.00" startedHalts="0.00" meanVehicleNumber="0.10" maxVehicleNumber="2" />
+   <interval begin="0.00" end="105.00" id="Node3_2_EB_0" sampledSeconds="35.09" nVehEntered="2" nVehLeft="2" nVehSeen="2" meanSpeed="1.21" meanTimeLoss="16.02" meanOccupancy="6.30" maxOccupancy="40.61" meanMaxJamLengthInVehicles="0.26" meanMaxJamLengthInMeters="1.12" maxJamLengthInVehicles="1" maxJamLengthInMeters="4.35" jamLengthInVehiclesSum="27" jamLengthInMetersSum="117.22" meanHaltingDuration="28.00" maxHaltingDuration="28.00" haltingDurationSum="28.00" meanIntervalHaltingDuration="28.00" maxIntervalHaltingDuration="28.00" intervalHaltingDurationSum="28.00" startedHalts="1.00" meanVehicleNumber="0.35" maxVehicleNumber="2" />
+</detector>
