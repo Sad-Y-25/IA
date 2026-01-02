@@ -1,0 +1,7 @@
+traci
+sumolib
+numpy
+opencv-python
+scikit-learn
+matplotlib
+ultralytics

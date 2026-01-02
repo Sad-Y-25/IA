@@ -1,0 +1,20 @@
+# 1. Ignore the Virtual Environment (wherever it is)
+.venv/
+venv/
+ENV/
+
+# 2. Ignore Python Compiled Files (Recursively)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. Ignore Generated SUMO/Simulation Files
+e*.xml
+*.sumo.trj
+*.sumo.cfg
+sumo_capture.png
+debug_screenshots/
+
+# 4. OS System Files
+.DS_Store
+Thumbs.db
