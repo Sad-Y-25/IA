@@ -1,0 +1,16 @@
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache (Compiled files)
+__pycache__/
+*.py[cod]
+
+# SUMO Generated Detector Files
+e*.xml
+*.sumo.trj
+
+# Other common system files to ignore
+.DS_Store
+Thumbs.db
