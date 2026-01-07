@@ -54,7 +54,7 @@ class TrafficEye:
                 
                 # Logic to classify vehicles
                 is_ambulance = (v_class == "emergency") or ("amb" in vid.lower()) or ("emergency" in v_type.lower())
-                is_truck = (v_class in ["truck", "trailer", "delivery"]) or ("truck" in vid.lower())
+                is_truck = (v_class in ["truck", "trailer", "delivery","bus"]) or ("truck" in vid.lower())
                 is_car = (v_class in ["passenger", "taxi", "hov"]) or (not is_ambulance and not is_truck)
 
                 if is_ambulance:

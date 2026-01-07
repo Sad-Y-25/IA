@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-03T22:25:56.581892+00:00 by Eclipse SUMO netedit 1.25.0
+<!-- generated on 2026-01-07T20:54:36.905857+00:00 by Eclipse SUMO netedit 1.25.0
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="DEFAULT_VEHTYPE" color="0,128,128"/>
+    <vType id="bus" vClass="bus" color="yellow"/>
+    <vType id="emergency" vClass="emergency" guiShape="emergency"/>
+    <vType id="t_0"/>
+    <vType id="trailer" vClass="trailer" color="blue"/>
     <!-- Vehicles, persons and containers (sorted by depart) -->
-    <flow id="f_0" begin="0.00" end="3600.00" perHour="1800.00" from="Node9_7" to="Node4_1" via="Node5_4"/>
-    <flow id="f_1" type="DEFAULT_TAXITYPE" begin="0.00" end="3600.00" perHour="1800.00" from="Node9_3" to="Node1_4" via="Node7_7_NB Node8_1"/>
-    <flow id="f_2" type="DEFAULT_PEDTYPE" begin="0.00" end="3600.00" perHour="1800.00" from="Node9_7" to="Node6_3"/>
-    <personFlow id="pf_0" begin="0.00" end="3600.00" perHour="1800.00">
-        <personTrip from="Node9_7" to="Node3_9"/>
+    <trip id="t_0" type="emergency" depart="0.00" from="Node4_1" to="Node1_8" via="Node1_8 Node8_7 Node2_7_SB Node2_5_SB Node5_4 Node4_1"/>
+    <trip id="t_2" type="emergency" depart="0.00" from="Node4_1" to="Node4_1" via="Node1_2_EB Node2_5_SB Node5_6 Node6_3 Node2_3_WB Node1_2_WB Node1_4"/>
+    <trip id="t_4" type="bus" depart="0.00" from="Node6_3" to="Node3_9" via="Node3_9 Node9_7 Node7_8 Node8_1 Node1_4 Node4_5 Node5_6 Node6_3"/>
+    <trip id="t_5" type="bus" depart="0.00" from="Node6_3" to="Node6_3" via="Node2_3_WB Node7_7_NB Node7_9 Node9_3"/>
+    <trip id="t_6" type="trailer" depart="0.00" from="Node8_1" to="Node8_1" via="Node1_4 Node4_5 Node2_5_NB Node2_3_EB Node3_6 Node6_5 Node5_4 Node4_1 Node1_8 Node8_7 Node7_9 Node9_3 Node2_3_WB Node7_7_NB Node7_8"/>
+    <flow id="f_0" type="t_0" begin="0.00" end="3600.00" perHour="300.00" color="white" from="Node9_7" to="Node7_8"/>
+    <flow id="f_1" type="t_0" begin="0.00" end="3600.00" perHour="300.00" color="white" from="Node9_7" to="Node5_6" via="Node2_7_SB Node2_5_SB"/>
+    <flow id="f_2" type="t_0" begin="0.00" end="3600.00" perHour="180.00" color="white" from="Node6_3" to="Node3_9"/>
+    <flow id="f_3" type="t_0" begin="0.00" end="3600.00" perHour="150.00" color="white" from="Node4_1" to="Node3_9" via="Node1_2_EB Node2_3_EB"/>
+    <flow id="f_4" type="emergency" begin="0.00" end="3600.00" perHour="40.00" color="white" from="Node4_1" to="Node5_4" via="Node1_2_EB Node7_7_NB Node7_9 Node9_3 Node2_3_WB Node2_5_SB"/>
+    <flow id="f_5" type="bus" begin="0.00" end="3600.00" perHour="40.00" from="Node6_3" to="Node5_6" via="Node3_9 Node9_7 Node2_7_SB Node1_2_WB Node1_4 Node4_5"/>
+    <flow id="f_6" type="trailer" begin="0.00" end="3600.00" perHour="25.00" color="blue" from="Node7_8" to="Node9_7" via="Node8_1 Node1_4 Node4_5 Node2_5_NB Node2_3_EB Node3_9"/>
+    <personFlow id="pf_0" begin="0.00" end="3600.00" perHour="800.00">
+        <personTrip from="Node9_7" to="Node7_8"/>
     </personFlow>
-    <personFlow id="pf_1" begin="0.00" end="3600.00" perHour="1800.00">
+    <personFlow id="pf_1" begin="0.00" end="3600.00" perHour="800.00">
+        <personTrip from="Node9_7" to="Node5_6"/>
+    </personFlow>
+    <personFlow id="pf_2" begin="0.00" end="3600.00" perHour="800.00">
+        <personTrip from="Node6_3" to="Node3_9"/>
+    </personFlow>
+    <personFlow id="pf_3" begin="0.00" end="3600.00" perHour="800.00">
         <personTrip from="Node4_1" to="Node3_9"/>
     </personFlow>
-    <personFlow id="pf_2" begin="0.00" end="3600.00" perHour="1800.00">
-        <personTrip from="Node7_8" to="Node6_3"/>
+    <personFlow id="pf_4" begin="0.00" end="3600.00" perHour="800.00">
+        <personTrip from="Node8_1" to="Node3_9"/>
+    </personFlow>
+    <personFlow id="pf_5" begin="0.00" end="3600.00" perHour="800.00">
+        <personTrip from="Node9_7" to="Node5_4"/>
     </personFlow>
 </routes>
