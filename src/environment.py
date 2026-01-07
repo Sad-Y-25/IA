@@ -115,3 +115,28 @@ def get_average_waiting_time():
         return total_waiting / len(vehicle_ids)
     except:
         return 0
+    
+def get_vehicle_counts_with_lengths():
+    """Returns dicts of vehicle counts and total lengths from all detectors."""
+    queue_data = {}
+    length_data = {}
+    for group in config.DETECTOR_GROUPS.values():
+        for det_id in group:
+            try:
+                queue_data[det_id] = traci.lanearea.getLastStepVehicleNumber(det_id)
+                length_data[det_id] = traci.lanearea.getLength(det_id) * queue_data[det_id]  # Approx total length as detector length * count
+            except:
+                queue_data[det_id] = 0
+                length_data[det_id] = 0
+    return queue_data, length_data
+
+def get_vehicle_occupancy():
+    """Returns dict of occupancy from all detectors (0-1 fraction)."""
+    occupancy_data = {}
+    for group in config.DETECTOR_GROUPS.values():
+        for det_id in group:
+            try:
+                occupancy_data[det_id] = traci.lanearea.getLastStepOccupancy(det_id)
+            except:
+                occupancy_data[det_id] = 0.0
+    return occupancy_data

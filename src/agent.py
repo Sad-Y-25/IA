@@ -4,11 +4,12 @@ from sklearn.tree import DecisionTreeClassifier
 from . import config
 
 class TrafficAgent:
-    def __init__(self, n_detectors):
+    def __init__(self, n_detectors, tl_id=None):
         self.n_detectors = n_detectors
+        self.tl_id = tl_id  # Store TL ID
         self.q_table = {}
         self.classifier = self._train_classifier()
-        print(f"Agent initialized with {self.n_detectors} detectors")
+        print(f"Agent for {self.tl_id} initialized with {self.n_detectors} detectors")
         
     def _train_classifier(self):
         """
