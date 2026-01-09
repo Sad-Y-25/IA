@@ -113,3 +113,15 @@ class TrafficAgent:
         except Exception as e:
             print(f"Could not load Q-table from {filename}: {e}")
             return False
+        
+    def choose_emergency_action(self, current_phase_state):
+        """
+        Determines action during an emergency (Ambulance present).
+        Logic: If the light is NOT Green, Force Switch (1). If Green, Keep (0).
+        """
+        # 'r' = red, 'y' = yellow, 'G' = Priority Green, 'g' = Green
+        # If we see ANY Red ('r') or Yellow ('y') in the active index, we try to switch to find Green.
+        if 'r' in current_phase_state or 'y' in current_phase_state:
+            return 1 # Force Switch to try and get Green
+        else:
+            return 0 # Hold Green
